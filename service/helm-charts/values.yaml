@@ -40,7 +40,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 443
 
 ingress:
@@ -49,9 +49,9 @@ ingress:
   annotations: 
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      alb.ingress.kubernetes.io/subnets: subnet-019647448319ae275, subnet-012e87021338d9172
+      alb.ingress.kubernetes.io/subnets: subnet-09085b221319453b7, subnet-0e72a507646dce599
       kubernetes.io/ingress.class: alb
-      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:938840855523:certificate/5f071d4f-e251-4ce1-9b15-3960914d4a0a
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:938840855523:certificate/15e907b2-4f7f-436c-80a4-54fbc6463633
       alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]' 
   hosts:
     - host: bubble.mevly.cloud
