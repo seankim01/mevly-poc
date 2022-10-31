@@ -447,7 +447,7 @@ controller:
       kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      alb.ingress.kubernetes.io/subnets: subnet-04e4a4b68620e738f, subnet-0989a9529520f66a6
+      alb.ingress.kubernetes.io/subnets: subnet-09085b221319453b7, subnet-0e72a507646dce599
       alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:938840855523:certificate/15e907b2-4f7f-436c-80a4-54fbc6463633
       alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]' 
     # kubernetes.io/ingress.class: nginx
