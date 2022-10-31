@@ -3,10 +3,10 @@ kind: Ingress
 metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/subnets: subnet-019647448319ae275, subnet-012e87021338d9172
+    alb.ingress.kubernetes.io/subnets: subnet-04e4a4b68620e738f, subnet-0989a9529520f66a6
     alb.ingress.kubernetes.io/target-type: ip
     kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:938840855523:certificate/5f071d4f-e251-4ce1-9b15-3960914d4a0a
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:938840855523:certificate/15e907b2-4f7f-436c-80a4-54fbc6463633
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
     alb.ingress.kubernetes.io/healthcheck-path: /login
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP

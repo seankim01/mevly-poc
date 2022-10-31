@@ -1,13 +1,13 @@
 def awsECRURL="938840855523.dkr.ecr.ap-northeast-2.amazonaws.com/test"
 def awsKey="aws-key"
 def awsRegion="ap-northeast-2"
-def branch="main"
+def branch="master"
 def commitMsg="poc"
 def directoryPath="service"
-def githubName="seankim1"
-def githubEmail="seankim@mz.co.kr"
+def githubName="seankim01"
+def githubEmail="seankim@megazone.com"
 def githubKey="jenkins-gitlab-key"
-def githubSSHURL="git@gitlab.com:seankim1/poc.git"
+def githubSSHURL="git@github.com:seankim01/mevly-poc.git"
 def imageTag="blue"
 
 podTemplate(label: 'docker-build',
