@@ -8,7 +8,7 @@ def githubName="seankim01"
 def githubEmail="seankim@megazone.com"
 def githubKey="jenkins-github-key"
 def githubSSHURL="git@github.com:seankim01/mevly-poc.git"
-def imageTag="blue"
+def imageTag="orange"
 
 podTemplate(label: 'docker-build',
   containers: [
