@@ -82,7 +82,7 @@ podTemplate(label: 'docker-build',
                         git checkout ${branch}
                         cd ${directoryPath}/helm-charts
                         sed -i 's/tag:.*/tag: ${imageTag}/g' values.yaml
-                        cd ../
+                        cd ../../
                         git commit -a -m ${commitMsg}
                         git remote set-url origin ${githubSSHURL}
                         git push -u origin main
