@@ -5,10 +5,10 @@ services:
     image: 'gitlab/gitlab-ee:14.6.2-ee.0'
     container_name: gitlab
     restart: always
-    hostname: 'git.mebly.xyz'
+    hostname: 'git.mevly.cloud'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url "https://git.mebly.xyz"
+        external_url "https://git.mevly.cloud"
         gitlab_rails['lfs_enabled'] = true
         gitlab_rails['backup_keep_time'] = 604800
         nginx['client_max_body_size'] = '1024m'
