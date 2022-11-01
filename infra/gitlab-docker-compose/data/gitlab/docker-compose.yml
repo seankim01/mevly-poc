@@ -1,5 +1,4 @@
 version: '3.9'
-
 services:
   gitlab:
     image: 'gitlab/gitlab-ee:14.6.2-ee.0'
