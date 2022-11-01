@@ -10,8 +10,8 @@ spec:
   {{- end }}
   strategy:
     blueGreen:      
-      activeService: superapi-svc-active
-      previewService: superapi-svc-preview
+      activeService: mevly-poc-bubblepool-active
+      previewService: mevly-poc-bubblepool-preview
       autoPromotionEnabled: false      
   revisionHistoryLimit: 2
   selector:
