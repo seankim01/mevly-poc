@@ -9,18 +9,10 @@ spec:
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   strategy:
-    canary:
-      maxSurge: "25%"
-      maxUnavailable: 0
-      steps:
-      - setWeight: 25
-      - pause: {duration: 30}
-      - setWeight: 50
-      - pause: {duration: 30}
-      - setWeight: 75
-      - pause: {duration: 30}
-      - setWeight: 100
-      - pause: {duration: 30}
+    blueGreen:      
+      activeService: superapi-svc-active
+      previewService: superapi-svc-preview
+      autoPromotionEnabled: false      
   revisionHistoryLimit: 2
   selector:
     matchLabels:
