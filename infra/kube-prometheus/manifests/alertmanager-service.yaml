@@ -20,5 +20,5 @@ spec:
     app.kubernetes.io/component: alert-router
     app.kubernetes.io/name: alertmanager
     app.kubernetes.io/part-of: kube-prometheus
-  sessionAffinity: ClientIP
+  #sessionAffinity: ClientIP
   type: LoadBalancer
